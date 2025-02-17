@@ -20,9 +20,13 @@ def valor_raizes(a, b, c):
 
     else:
         print("O delta é negativo, logo não existe raiz no campo dos reais")
-    
-valor_a = float(input("Digite o valor do coeficiente a = "))
-valor_b = float(input("Digite o valor do coeficiente b = "))
-valor_c = float(input("Digite o valor do coeficiente c = "))
 
-valor_raizes(valor_a, valor_b, valor_c)
+try:
+    valor_a = float(input("Digite o valor do coeficiente a = "))
+    valor_b = float(input("Digite o valor do coeficiente b = "))
+    valor_c = float(input("Digite o valor do coeficiente c = "))
+
+    valor_raizes(valor_a, valor_b, valor_c)
+
+except ValueError:
+    print("Por favor, digite apenas números")
